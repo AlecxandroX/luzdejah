@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luz D'JAH - Banda de Reggae</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(90deg, #f9a825, #e53935, #43a047);
+            text-align: center;
+            padding: 60px 0;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .banner {
+            background-color: #232323;
+            border: 3px solid #e53935;
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content {
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            color: #f9a825;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        .cta-button {
+            background-color: #43a047;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #388e3c;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 2em;
+            color: #f9a825;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        footer {
+            background-color: #1c1c1c;
+            padding: 20px 0;
+            text-align: center;
+            color: #bbb;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #43a047;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animações */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .wave {
+            position: relative;
+            height: 150px;
+            width: 100%;
+            background: linear-gradient(90deg, #f9a825, #e53935, #43a047);
+            clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
+            animation: wave 5s infinite linear;
+        }
+
+        @keyframes wave {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 400%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Luz D'JAH</h1>
+        <p>Vibrações Positivas em Cada Acorde</p>
+    </header>
+
+    <div class="wave"></div>
+
+    <div class="container">
+
+        <div class="banner">
+            <h2>Bandeira da Banda</h2>
+            <img src="logo.jpg" alt="Bandeira da Banda Luz D'JAH">
+        </div>
+
+        <div class="content">
+            <h2>Sobre Nós</h2>
+            <p>A Luz D'JAH é uma banda de reggae dedicada a espalhar mensagens de paz, amor e positividade através de suas músicas. Com influências do movimento rastafári, nossas letras refletem a luta pela justiça, igualdade e o poder espiritual da música. Junte-se a nós nessa jornada musical e sinta as boas vibrações.</p>
+            <button class="cta-button">Junte-se a Nós</button>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Luz D'JAH. Todos os direitos reservados. | <a href="#">Entre em contato</a></p>
+    </footer>
+
+    <!-- FontAwesome para ícones sociais -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
